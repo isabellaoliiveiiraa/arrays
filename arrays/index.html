@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script>
+        let frutas = ['maçã', 'banana', 'laranja']
+console.log(frutas[0])
+console.log(frutas[1])
+console.log(frutas[2])
+console.log(frutas.length)
+frutas.push('kiwi')
+frutas.push('abacaxi')
+console.log('o novo tamanho do array frutas é: ' + frutas.length)
+console.log(frutas)
+
+frutas.pop()
+console.log(frutas)
+frutas.unshift('jabuticaba')
+console.log(frutas)
+frutas.shift()
+console.log(frutas)
+
+let indice = frutas.indexOf('laranja')
+console.log(indice)
+
+let algumafruta = frutas.slice(3, 5)
+console.log(algumafruta)
+
+let array = ['a', 'b', 'c', 'd']
+array.splice(2,1)
+console.log(array)
+
+let frutasMaiusculas = frutas.map(function(fruta) {
+    return fruta.toUpperCase();
+  });
+ 
+  console.log(frutasMaiusculas); // ["ABACAXI", "BANANA", "LARANJA"]
+
+
+    </script>
+</body>
+</html>
